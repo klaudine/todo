@@ -1,0 +1,25 @@
+#root{
+    margin-top: 100px;
+}
+input {
+    max-width: 700px;
+}
+
+.todo-item {
+    min-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 15px;
+}
+
+.todo-item button {
+    margin-left: auto;
+}
+
+input:checked ~ span.todo-text {
+    text-decoration: line-through;
+    font-style: italic;
+}
